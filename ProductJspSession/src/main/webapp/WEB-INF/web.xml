@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>ProductJspSession</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    </welcome-file-list>
+    <servlet>
+    <description></description>
+    <display-name>ProductServlet</display-name>
+    <servlet-name>ProductServlet</servlet-name>
+    <servlet-class>com.business.ProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductServlet</servlet-name>
+    <url-pattern>/ProductServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <description>display</description>
+  <servlet-name>display</servlet-name>
+  <jsp-file>/display.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>display</servlet-name>
+    <url-pattern>/display</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
